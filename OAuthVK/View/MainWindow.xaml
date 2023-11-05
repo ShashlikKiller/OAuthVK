@@ -1,0 +1,17 @@
+﻿<Window x:Class="OAuthVK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OAuthVK"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing" Background="#252523">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Frame Name="BrowserPannel" Grid.Row="0" Grid.RowSpan="2"></Frame>
+        <Button Name="Auth_btn" Margin="5,5,5,5" Content="Auth" Grid.Row="1" Click="Auth_btn_Click" Foreground="AliceBlue" Background="#303030" Style="{StaticResource CustomButton}" BorderBrush="#454545"/>
+    </Grid>
+</Window>
